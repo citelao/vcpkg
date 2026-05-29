@@ -10,8 +10,15 @@ vcpkg_extract_source_archive(
     PATCHES fix-abseil-nullability-compat.patch
 )
 
+set(MESON_OPTIONS "")
+if(VCPKG_TARGET_IS_WINDOWS)
+    # Designated initializers in the WebRTC source require C++20 on MSVC
+    list(APPEND MESON_OPTIONS "-Dcpp_std=vc++20")
+endif()
+
 vcpkg_configure_meson(
     SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS ${MESON_OPTIONS}
 )
 
 vcpkg_install_meson()
