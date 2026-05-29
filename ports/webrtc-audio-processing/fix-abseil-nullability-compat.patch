@@ -1,10 +1,11 @@
 diff --git a/webrtc/api/scoped_refptr.h b/webrtc/api/scoped_refptr.h
 --- a/webrtc/api/scoped_refptr.h
 +++ b/webrtc/api/scoped_refptr.h
-@@ -69,6 +69,18 @@
+@@ -67,7 +67,20 @@
+ #include <utility>
 
  #include "absl/base/nullability.h"
-
+-
 +// abseil >= 20250814 replaced Nullable<T>/Nonnull<T> type aliases with
 +// absl_nullable/absl_nonnull pointer-annotation macros. ABSL_POINTERS_DEFAULT_NONNULL
 +// is defined only in the new-style headers; use it to detect and bridge the gap.
@@ -20,3 +21,5 @@ diff --git a/webrtc/api/scoped_refptr.h b/webrtc/api/scoped_refptr.h
 +#endif
 +
  namespace webrtc {
+
+ template <class T>
