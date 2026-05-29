@@ -7,6 +7,7 @@ vcpkg_download_distfile(ARCHIVE
 vcpkg_extract_source_archive(
     SOURCE_PATH
     ARCHIVE "${ARCHIVE}"
+    PATCHES fix-abseil-nullability-compat.patch
 )
 
 vcpkg_configure_meson(
