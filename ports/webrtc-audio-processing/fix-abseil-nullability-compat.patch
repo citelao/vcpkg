@@ -1,7 +1,7 @@
 diff --git a/webrtc/api/scoped_refptr.h b/webrtc/api/scoped_refptr.h
 --- a/webrtc/api/scoped_refptr.h
 +++ b/webrtc/api/scoped_refptr.h
-@@ -67,7 +67,20 @@
+@@ -67,7 +67,22 @@
  #include <utility>
 
  #include "absl/base/nullability.h"
