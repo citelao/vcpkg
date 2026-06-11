@@ -1,0 +1,14 @@
+{
+  "name": "webrtc-audio-processing",
+  "version": "2.1",
+  "description": "WebRTC audio processing library with echo cancellation, noise suppression, and AGC",
+  "homepage": "https://gitlab.freedesktop.org/pipewire/webrtc-audio-processing",
+  "license": "BSD-3-Clause AND Apache-2.0",
+  "dependencies": [
+    "abseil",
+    {
+      "name": "vcpkg-tool-meson",
+      "host": true
+    }
+  ]
+}

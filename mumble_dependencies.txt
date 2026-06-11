@@ -34,5 +34,6 @@ soci[mysql,postgresql,sqlite3]
 speexdsp
 spdlog
 sqlite3
+webrtc-audio-processing
 zeroc-ice-mumble
 zlib
